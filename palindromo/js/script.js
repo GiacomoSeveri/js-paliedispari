@@ -25,7 +25,7 @@ btn.addEventListener('click', function(){
     const reversedWord = reverseWord(currentWord);
     console.log(reversedWord);
 
-    if(currentWord == reversedWord) {
+    if(currentWord === reversedWord) {
         result.innerText = `Si, ${currentWord} è palindroma`;
     } else {
         result.innerText = `No, ${currentWord} non è palindroma`;
