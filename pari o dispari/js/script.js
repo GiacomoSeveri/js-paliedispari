@@ -5,7 +5,9 @@ const result = document.getElementById('result');
 
 btn.addEventListener('click', function(){
 
-    const currentNumb = number.value;
+    const currentNumb = parseInt(number.value);
+
+    const oddEvenValue = oddEven.value;
 
     if(isNaN(currentNumb)) {
         alert('Questo non è un numero');
@@ -20,4 +22,16 @@ btn.addEventListener('click', function(){
     resultSum = currentNumb + random;
     console.log(resultSum);
 
+    if(oddEvenValue === 'odd' && resultSum % 2 === 0) {
+        result.innerText = `è uscito ${resultSum} hai perso! Torna dalla mamma`;
+    } 
+    else if(oddEvenValue === 'even' && resultSum % 2 === 0) {
+        result.innerText = `è uscito ${resultSum} hai vinto!`;
+    } 
+    else if(oddEvenValue === 'even' && !(resultSum % 2 === 0)) {
+        result.innerText = `è uscito ${resultSum} hai perso! Torna dalla mamma`;
+    }
+    else if(oddEvenValue === 'odd' && !(resultSum % 2 === 0)) {
+        result.innerText = `è uscito ${resultSum} hai vinto!`;
+    }
 })
