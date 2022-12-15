@@ -14,7 +14,7 @@ btn.addEventListener('click', function(){
     }
 
     function reverseWord(word) {
-        let reverse = ' ';
+        let reverse = '';
 
         for(let i = word.length - 1; i >= 0; i--) {
             reverse += word[i];
@@ -26,8 +26,8 @@ btn.addEventListener('click', function(){
     console.log(reversedWord);
 
     if(currentWord === reversedWord) {
-        result.innerText = `Si, ${currentWord} è palindroma`;
+        result.innerText = `Si, la parola ${currentWord} è palindroma`;
     } else {
-        result.innerText = `No, ${currentWord} non è palindroma`;
+        result.innerText = `No, la parola ${currentWord} non è palindroma`;
     }
 });
