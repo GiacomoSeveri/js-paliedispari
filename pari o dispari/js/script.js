@@ -23,13 +23,13 @@ btn.addEventListener('click', function(){
     console.log(resultSum);
 
     if(oddEvenValue === 'odd' && resultSum % 2 === 0) {
-        result.innerText = `è uscito ${resultSum} hai perso! Torna dalla mamma`;
+        result.innerText = `è uscito ${resultSum} hai perso! Torna dalla mamma.`;
     } 
     else if(oddEvenValue === 'even' && resultSum % 2 === 0) {
         result.innerText = `è uscito ${resultSum} hai vinto!`;
     } 
     else if(oddEvenValue === 'even' && !(resultSum % 2 === 0)) {
-        result.innerText = `è uscito ${resultSum} hai perso! Torna dalla mamma`;
+        result.innerText = `è uscito ${resultSum} hai perso! Torna dalla mamma.`;
     }
     else if(oddEvenValue === 'odd' && !(resultSum % 2 === 0)) {
         result.innerText = `è uscito ${resultSum} hai vinto!`;
